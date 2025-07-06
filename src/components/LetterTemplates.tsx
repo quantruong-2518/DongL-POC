@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 const LetterTemplates = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -68,11 +69,19 @@ const LetterTemplates = () => {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 6000);
-    return () => clearInterval(timer);
-  }, []);
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [nextSlide]);
 
-  const TagComponent = ({ tag, type = 'default' }) => {
+  const TagComponent = ({
+    tag,
+    type = 'default',
+  }: {
+    tag?: string;
+    type?: string;
+  }) => {
     const getTagClass = () => {
       switch (type) {
         case 'love':
@@ -114,25 +123,32 @@ const LetterTemplates = () => {
           <div className="relative bg-gray-100 rounded-lg overflow-hidden group aspect-video">
             {/* Image Container */}
             <div className="h-full bg-gray-100 flex items-center justify-center overflow-hidden">
-              <img
+              <Image
                 src={letterTemplates[currentSlide].image}
                 alt={letterTemplates[currentSlide].title}
+                width={600} // hoặc kích thước bạn muốn
+                height={400}
                 className="w-full h-full object-cover object-center transition-all duration-700"
                 onError={e => {
-                  const target = e.currentTarget;
+                  const target = e.currentTarget as HTMLImageElement;
                   target.style.display = 'none';
-                  if (target.parentElement) {
-                    target.parentElement.innerHTML = `
-                      <div class="w-full h-full bg-gray-100 flex items-center justify-center">
-                        <div class="text-center text-gray-600">
-                          <svg class="w-16 h-16 mx-auto mb-4 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M4 4h16v12H4V4zm2 2v8h12V6H6zm2 2h8v4H8V8z"/>
-                          </svg>
-                        </div>
-                      </div>
-                    `;
-                  }
+
+                  const fallback = document.createElement('div');
+                  fallback.className =
+                    'w-full h-full bg-gray-100 flex items-center justify-center rounded-xl';
+
+                  fallback.innerHTML = `
+      <div class="text-center text-gray-500">
+        <svg class="w-12 h-12 mx-auto mb-2 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M4 4h16v12H4V4zm2 2v8h12V6H6zm2 2h8v4H8V8z" />
+        </svg>
+        <p class="text-sm">Image unavailable</p>
+      </div>
+    `;
+
+                  target.parentElement?.appendChild(fallback);
                 }}
+                unoptimized // nếu ảnh không nằm trong domain được phép
               />
 
               {/* Content Overlay with blur background */}

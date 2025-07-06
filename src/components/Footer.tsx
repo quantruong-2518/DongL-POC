@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -28,10 +29,14 @@ const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-2">
             <Link href="/" className="inline-block mb-6">
-              <img
+              <Image
                 src="https://dongl.co.kr/assets/image/logo.png?v=1"
                 alt="DongL Logo"
-                className="h-10 w-auto drop-shadow-md"
+                width={400}
+                height={100}
+                priority
+                quality={100}
+                className="w-auto h-12 drop-shadow-md"
               />
             </Link>
 

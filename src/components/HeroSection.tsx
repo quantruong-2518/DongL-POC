@@ -1,27 +1,9 @@
 'use client';
 
 import React from 'react';
-import { Heart, Mail, Users, Star, ArrowRight } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 const HeroSection = () => {
-  const reasons = [
-    {
-      title: 'Handwritten Feel, Digital Convenience',
-      description:
-        'Letters are printed and delivered with personal touches that feel truly handwritten.',
-    },
-    {
-      title: 'Support for Sensitive Connections',
-      description:
-        'Whether to prisons or military camps, we deliver with discretion and care.',
-    },
-    {
-      title: 'Reconnect With Empathy',
-      description:
-        'Every message is a step toward healing, reconciliation, or shared joy.',
-    },
-  ];
-
   return (
     <section className="relative bg-gradient-to-br from-slate-50 via-yellow-50 to-purple-50 section-spacing overflow-hidden pt-24">
       {/* Background decorations */}
