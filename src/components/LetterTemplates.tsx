@@ -8,53 +8,53 @@ const LetterTemplates = () => {
   const letterTemplates = [
     {
       id: 1,
-      title: 'Letters to Family',
-      description: 'Warm messages for beloved family members far away',
-      category: 'Family',
+      title: '가족에게 보내는 편지',
+      description: '멀리 있는 사랑하는 가족에게 보내는 따뜻한 메시지',
+      category: '가족',
       image:
         'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=500&h=400&fit=crop',
-      quote: 'Distance means nothing when someone means everything.',
-      samples: '189 templates',
+      quote: '소중한 사람이 있다면 거리는 아무것도 아니다.',
+      samples: '189개 템플릿',
     },
     {
       id: 2,
-      title: 'Encouragement Letters',
-      description: 'Words of strength for difficult times',
-      category: 'Support',
+      title: '격려의 편지',
+      description: '어려운 시기에 전하는 힘의 메시지',
+      category: '지원',
       image:
         'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500&h=400&fit=crop',
-      quote: 'Your strength is greater than any struggle.',
-      samples: '245 templates',
+      quote: '당신의 힘은 어떤 어려움보다도 큽니다.',
+      samples: '245개 템플릿',
     },
     {
       id: 3,
-      title: 'Memory Letters',
-      description: 'Preserving precious moments together',
-      category: 'Memories',
+      title: '추억의 편지',
+      description: '소중한 순간들을 보존하는 편지',
+      category: '추억',
       image:
         'https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=500&h=400&fit=crop',
-      quote: 'Beautiful memories are treasures that time cannot steal.',
-      samples: '156 templates',
+      quote: '아름다운 추억은 시간도 빼앵을 수 없는 보물입니다.',
+      samples: '156개 템플릿',
     },
     {
       id: 4,
-      title: 'Home Updates',
-      description: 'Sharing life and news from home',
-      category: 'Updates',
+      title: '가족 근황',
+      description: '집에서 있었던 생활과 소식을 공유하다',
+      category: '근황',
       image:
         'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=400&fit=crop',
-      quote: 'Home is wherever you are loved.',
-      samples: '203 templates',
+      quote: '집은 당신이 사랑받는 곳입니다.',
+      samples: '203개 템플릿',
     },
     {
       id: 5,
-      title: 'Holiday Wishes',
-      description: 'Special greetings for meaningful occasions',
-      category: 'Celebrations',
+      title: '황작의 인사',
+      description: '의미 있는 날에 전하는 특별한 인사',
+      category: '축하',
       image:
         'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=500&h=400&fit=crop',
-      quote: 'Love travels across any distance.',
-      samples: '167 templates',
+      quote: '사랑은 어떤 거리도 뛰어넥습니다.',
+      samples: '167개 템플릿',
     },
   ];
 
@@ -109,11 +109,10 @@ const LetterTemplates = () => {
       {/* Section Header */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Discover Our <span className="text-purple-600">Letter Templates</span>
+          우리의 <span className="text-purple-600">편지 템플릿</span>을 만나보세요
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          Carefully written templates to help you send messages of comfort,
-          love, or everyday connection — no matter the distance.
+          위로, 사랑, 일상적인 연결의 메시지를 전하는 데 도움이 되는 세심하게 작성된 템플릿입니다 — 거리에 상관없이.
         </p>
       </div>
 
@@ -182,7 +181,7 @@ const LetterTemplates = () => {
             </button>
             {/* Letter Writing Button - Using primary purple color */}
             <button className="absolute bottom-4 right-4 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-all shadow-md">
-              Start Writing
+              작성 시작
             </button>
             {/* Slide Indicators */}
             <div className="absolute top-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
@@ -208,10 +207,10 @@ const LetterTemplates = () => {
             <div className="flex-1 flex flex-col">
               <div className="flex justify-between items-center mb-2">
                 <h3 className="text-base font-semibold text-gray-800">
-                  Theme Hot
+                  인기 주제
                 </h3>
                 <button className="text-xs text-purple-600 hover:text-purple-700 font-medium">
-                  see more
+                  더 보기
                 </button>
               </div>
 
@@ -222,15 +221,15 @@ const LetterTemplates = () => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-gray-800 text-xs mb-1">
-                      You Are So Precious To Me
+                      당신은 나에게 소중한 사람
                     </p>
                     <div className="flex justify-between items-center mb-1">
-                      <span className="text-xs text-gray-700">2,000 Won</span>
-                      <span className="text-xs text-gray-500">3000 Used</span>
+                      <span className="text-xs text-gray-700">2,000원</span>
+                      <span className="text-xs text-gray-500">3000명 사용</span>
                     </div>
                     <div className="flex flex-wrap gap-1">
-                      <TagComponent tag="#love" type="love" />
-                      <TagComponent tag="#precious" type="relationship" />
+                      <TagComponent tag="#사랑" type="love" />
+                      <TagComponent tag="#소중" type="relationship" />
                     </div>
                   </div>
                 </div>
@@ -241,15 +240,15 @@ const LetterTemplates = () => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-gray-800 text-xs mb-1">
-                      When Will We Meet?
+                      언제 다시 만날까?
                     </p>
                     <div className="flex justify-between items-center mb-1">
-                      <span className="text-xs text-gray-700">2,000 Won</span>
-                      <span className="text-xs text-gray-500">3000 Used</span>
+                      <span className="text-xs text-gray-700">2,000원</span>
+                      <span className="text-xs text-gray-500">3000명 사용</span>
                     </div>
                     <div className="flex flex-wrap gap-1">
-                      <TagComponent tag="#meeting" type="relationship" />
-                      <TagComponent tag="#longing" />
+                      <TagComponent tag="#만남" type="relationship" />
+                      <TagComponent tag="#그리움" />
                     </div>
                   </div>
                 </div>
@@ -260,15 +259,15 @@ const LetterTemplates = () => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-gray-800 text-xs mb-1">
-                      Missing You Every Day
+                      매일 그리워하며
                     </p>
                     <div className="flex justify-between items-center mb-1">
-                      <span className="text-xs text-gray-700">2,000 Won</span>
-                      <span className="text-xs text-gray-500">3000 Used</span>
+                      <span className="text-xs text-gray-700">2,000원</span>
+                      <span className="text-xs text-gray-500">3000명 사용</span>
                     </div>
                     <div className="flex flex-wrap gap-1">
-                      <TagComponent tag="#missing" type="love" />
-                      <TagComponent tag="#daily" />
+                      <TagComponent tag="#그리움" type="love" />
+                      <TagComponent tag="#일상" />
                     </div>
                   </div>
                 </div>
@@ -279,10 +278,10 @@ const LetterTemplates = () => {
             <div className="flex-1 flex flex-col">
               <div className="flex justify-between items-center mb-2">
                 <h3 className="text-base font-semibold text-gray-800">
-                  Seasonal
+                  계절별
                 </h3>
                 <button className="text-xs text-purple-600 hover:text-purple-700 font-medium">
-                  see more
+                  더 보기
                 </button>
               </div>
 
@@ -293,15 +292,15 @@ const LetterTemplates = () => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-gray-800 text-xs mb-1">
-                      Holiday Greetings
+                      휴일 인사
                     </p>
                     <div className="flex justify-between items-center mb-1">
-                      <span className="text-xs text-gray-700">2,000 Won</span>
-                      <span className="text-xs text-gray-500">3000 Used</span>
+                      <span className="text-xs text-gray-700">2,000원</span>
+                      <span className="text-xs text-gray-500">3000명 사용</span>
                     </div>
                     <div className="flex flex-wrap gap-1">
-                      <TagComponent tag="#winter" type="seasonal" />
-                      <TagComponent tag="#christmas" type="seasonal" />
+                      <TagComponent tag="#겨울" type="seasonal" />
+                      <TagComponent tag="#크리스마스" type="seasonal" />
                     </div>
                   </div>
                 </div>
@@ -312,15 +311,15 @@ const LetterTemplates = () => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-gray-800 text-xs mb-1">
-                      New Year Wishes
+                      새해 축하
                     </p>
                     <div className="flex justify-between items-center mb-1">
-                      <span className="text-xs text-gray-700">2,000 Won</span>
-                      <span className="text-xs text-gray-500">3000 Used</span>
+                      <span className="text-xs text-gray-700">2,000원</span>
+                      <span className="text-xs text-gray-500">3000명 사용</span>
                     </div>
                     <div className="flex flex-wrap gap-1">
-                      <TagComponent tag="#newyear" type="seasonal" />
-                      <TagComponent tag="#celebration" type="seasonal" />
+                      <TagComponent tag="#새해" type="seasonal" />
+                      <TagComponent tag="#축하" type="seasonal" />
                     </div>
                   </div>
                 </div>
@@ -331,15 +330,15 @@ const LetterTemplates = () => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-gray-800 text-xs mb-1">
-                      Birthday Love Letter
+                      생일 사랑 편지
                     </p>
                     <div className="flex justify-between items-center mb-1">
-                      <span className="text-xs text-gray-700">2,000 Won</span>
-                      <span className="text-xs text-gray-500">3000 Used</span>
+                      <span className="text-xs text-gray-700">2,000원</span>
+                      <span className="text-xs text-gray-500">3000명 사용</span>
                     </div>
                     <div className="flex flex-wrap gap-1">
-                      <TagComponent tag="#summer" type="seasonal" />
-                      <TagComponent tag="#birthday" type="seasonal" />
+                      <TagComponent tag="#여름" type="seasonal" />
+                      <TagComponent tag="#생일" type="seasonal" />
                     </div>
                   </div>
                 </div>

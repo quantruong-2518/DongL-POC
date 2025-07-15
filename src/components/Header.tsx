@@ -22,13 +22,13 @@ const Header = () => {
 
         <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
           <Link href="#" className="hover:text-purple-600">
-            Home
+            홈
           </Link>
           <Link href="#" className="hover:text-purple-600">
-            Services
+            서비스
           </Link>
           <Link href="#" className="hover:text-purple-600">
-            Contact
+            연락처
           </Link>
         </nav>
       </div>

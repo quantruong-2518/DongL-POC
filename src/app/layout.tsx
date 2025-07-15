@@ -5,6 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin', 'vietnamese'] });
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: 'DongL – Connecting Hearts Through Letters',
   description:
     'DongL is a heartfelt platform that helps families and friends send thoughtful letters to loved ones who are far away — including military members and those in need of emotional support.',
@@ -15,6 +16,16 @@ export const metadata: Metadata = {
     'emotional support',
     'military letters',
     'prison letters',
+=======
+  title: 'DongL - 편지를 통해 마음을 연결하다',
+  description:
+    '멀리 있는 가족, 복무 중인 군인, 그리고 정신적 지원이 필요한 모든 사람들에게 의미 있는 편지를 보내는 플랫폼입니다.',
+  keywords: [
+    '편지',
+    '가족 연결',
+    '군인 편지',
+    '격려 편지',
+>>>>>>> 5888c96 (translate to korea)
     'DongL',
     'handwritten letters',
   ],
@@ -22,11 +33,19 @@ export const metadata: Metadata = {
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
   openGraph: {
+<<<<<<< HEAD
     title: 'DongL – Connecting Hearts Through Letters',
     description:
       'Send meaningful letters to your loved ones — no matter where they are. A gentle way to stay emotionally connected.',
     type: 'website',
     locale: 'en_US',
+=======
+    title: 'DongL - 편지를 통해 마음을 연결하다',
+    description:
+      '멀리 있는 가족과 친구들에게 의미 있는 편지를 보내는 플랫폼',
+    type: 'website',
+    locale: 'ko_KR',
+>>>>>>> 5888c96 (translate to korea)
     siteName: 'DongL',
     // image can be added if available
     // images: [
@@ -40,10 +59,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+<<<<<<< HEAD
     title: 'DongL – Connecting Hearts Through Letters',
     description:
       'A thoughtful platform that lets you send letters with care and meaning. For families, soldiers, and everyone in between.',
     // image: 'https://dongl.co.kr/twitter-image.jpg',
+=======
+    title: 'DongL - 편지를 통해 마음을 연결하다',
+    description: '가족과 친구들에게 의미 있는 편지를 보내는 플랫폼',
+>>>>>>> 5888c96 (translate to korea)
   },
 };
 
@@ -53,7 +77,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="vi" suppressHydrationWarning>
+    <html lang="ko" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
