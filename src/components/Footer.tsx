@@ -8,17 +8,17 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const services = [
-    { name: 'Online Writing', href: '#' },
-    { name: 'Letter Templates', href: '#' },
-    { name: 'Prison Letters', href: '#' },
-    { name: 'Military Letters', href: '#' },
+    { name: '온라인 작성', href: '#' },
+    { name: '편지 템플릿', href: '#' },
+    { name: '교도소 편지', href: '#' },
+    { name: '군인 편지', href: '#' },
   ];
 
   const company = [
-    { name: 'About Us', href: '#' },
-    { name: 'Contact', href: '#' },
-    { name: 'Privacy Policy', href: '#' },
-    { name: 'Terms of Service', href: '#' },
+    { name: '회사 소개', href: '#' },
+    { name: '연락처', href: '#' },
+    { name: '개인정보처리방침', href: '#' },
+    { name: '이용약관', href: '#' },
   ];
 
   return (
@@ -41,8 +41,7 @@ const Footer = () => {
             </Link>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-md">
-              Connect hearts through meaningful letters. Bringing love and
-              support to those who need it most.
+              의미 있는 편지를 통해 마음을 연결하세요. 가장 필요한 사람들에게 사랑과 지원을 전합니다.
             </p>
 
             {/* Contact Info */}
@@ -58,7 +57,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-medium text-gray-900 mb-6">Services</h3>
+            <h3 className="text-lg font-medium text-gray-900 mb-6">서비스</h3>
             <ul className="space-y-4">
               {services.map((service, index) => (
                 <li key={index}>
@@ -75,7 +74,7 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h3 className="text-lg font-medium text-gray-900 mb-6">Company</h3>
+            <h3 className="text-lg font-medium text-gray-900 mb-6">회사</h3>
             <ul className="space-y-4">
               {company.map((item, index) => (
                 <li key={index}>
@@ -97,10 +96,10 @@ const Footer = () => {
         <div className="container-custom py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-gray-500">
-              <p>&copy; {currentYear} 동글 DongL. All rights reserved.</p>
+              <p>&copy; {currentYear} 동글 DongL. 모든 권리 보유.</p>
             </div>
             <div className="text-sm text-gray-500">
-              <p>Made with care for meaningful connections</p>
+              <p>의미 있는 연결을 위해 정성을 담아 제작하였습니다</p>
             </div>
           </div>
         </div>
